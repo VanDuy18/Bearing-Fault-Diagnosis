@@ -14,3 +14,27 @@ attachments/assets/52ee9bc4-f81a-481d-b858-23bbe4696bb2" /> <img width="377" hei
 
 
 
+
+# Bearing-Fault-Diagnosis
+
+Bearing fault diagnosis is the process of mapping measured signals to the technical condition of a bearing. In this project, the input is time-domain vibration acceleration, and the output is one of four classes: Normal, Inner race, Outer race, and Ball fault. The main challenge lies in the variation of amplitude and spectral structure depending on motor speed, fault severity, sensor location, vibration transmission path, and measurement noise.
+
+A complete diagnostic pipeline requires a clear separation of three layers: signal acquisition and quality control; signal transformation into a meaningful representation; and classification and evaluation on unseen data. High accuracy is only meaningful when the data splitting strategy prevents nearly identical segments of the same file from leaking into both the training and test sets.
+
+The research object is the vibration signal measured on the underhang bearing housing of the rotating machinery model in the MAFAULDA dataset. The study utilizes one radial acceleration channel, a sampling frequency of 50 kHz, and four bearing condition labels. Each record contains 250,000 samples, corresponding to 5 seconds of measurement. This project focuses strictly on the condition classification problem and does not yet perform defect size estimation.
+ 
+<img width="896" height="299" alt="image" src="https://github.com/user-attachments/assets/9c26d306-05fc-4c8b-948a-86ec548e9974" />
+
+Build a vibration signal preprocessing pipeline and generate time-frequency spectrogram matrices using STFT.
+<img width="800" height="500" alt="12288" src="https://github.com/user-attachments/assets/108b422f-b611-474d-b34a-784e87653f6e" />
+<img width="945" height="472" alt="image" src="https://github.com/user-attachments/assets/c075da2c-c314-4421-aaa3-de32679529fb" />
+
+Design a 2D-CNN network to classify four conditions: normal, inner race fault, outer race fault, and rolling element fault.
+<img width="945" height="366" alt="image" src="https://github.com/user-attachments/assets/e673be75-f4d4-4b20-b418-9a79c7d6dc20" />
+
+Investigate four STFT window configurations, select the optimal configuration using the validation set, and evaluate it once on an independent test set.
+<img width="762" height="283" alt="image" src="https://github.com/user-attachments/assets/46f70326-e0e5-48a7-a620-cc46de8e62dc" />
+
+Evaluate the generalization capability across different fault severities under varying speeds using Accuracy, Precision, Recall, Macro-F1 scores, and confusion matrices.
+<img width="945" height="556" alt="image" src="https://github.com/user-attachments/assets/d06e87df-ca3c-4f3a-8aaf-81aa6b3f8801" /> <img width="945" height="474" alt="image" src="https://github.com/user-attachments/assets/52ee9bc4-f81a-481d-b858-23bbe4696bb2" /> <img width="377" height="348" alt="image" src="https://github.com/user-attachments/assets/dcc0a92b-727d-404d-b529-e0f6acb420c7" />
+
