@@ -10,6 +10,7 @@ Thiết kế mạng 2D-CNN để phân loại bốn trạng thái: bình thườ
 Khảo sát bốn cấu hình cửa sổ STFT, lựa chọn cấu hình bằng tập validation và đánh giá một lần trên tập test độc lập.<img width="762" height="283" alt="image" src="https://github.com/user-attachments/assets/46f70326-e0e5-48a7-a620-cc46de8e62dc" />
 
  Đánh giá khả năng tổng quát hóa với các mức độ lỗi khi tốc độ thay đổi thông qua Accuracy, Precision, Recall, Macro-F1 và ma trận nhầm lẫn.<img width="945" height="556" alt="image" src="https://github.com/user-attachments/assets/d06e87df-ca3c-4f3a-8aaf-81aa6b3f8801" /> <img width="945" height="474" alt="image" src="https://github.com/user- />
-attachments/assets/52ee9bc4-f81a-481d-b858-23bbe4696bb2" /> <img width="589" height="543" alt="image" src="https://github.com/user-attachments/assets/03c79034-5358-460b-b222-dae9bb89ac3a"
+attachments/assets/52ee9bc4-f81a-481d-b858-23bbe4696bb2" /> <img width="377" height="348" alt="image" src="https://github.com/user-attachments/assets/dcc0a92b-727d-404d-b529-e0f6acb420c7" />
+
 
 
